@@ -34,7 +34,7 @@ This project is a backend system UPI-based money transfer system*
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/adityakauthkar/upiBackend.git
+git clone https://github.com/adityakauthkar/upi_Backend.git
 cd upiBackend
 ```
 
