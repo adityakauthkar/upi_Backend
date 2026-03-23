@@ -18,6 +18,7 @@ const getBalance = async (req, res) => {
       });
     }
 
+   
     return res.status(200).json({
       success:true,
       balance: result.rows[0].balance,
@@ -168,7 +169,7 @@ const getTransactionHistory = async (req, res) => {
     const {status ,  startDate, endDate   } = req.query; 
     const userId = req.user.id;
 
-    let query = "SELECT * FROM transactions WHERE sender_id = $1 OR receiver_id = $1";
+    let query = "SELECT * FROM transactions WHERE sender_id = $1 OR receiver_id = $1";  
     let values = [userId];
 
     if (status) {
@@ -202,3 +203,6 @@ const getTransactionHistory = async (req, res) => {
 };
 
 module.exports = { getBalance, sendMoney, getTransactionHistory };
+
+
+

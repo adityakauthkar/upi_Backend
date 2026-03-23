@@ -23,7 +23,7 @@ This project is a backend system UPI-based money transfer system*
 
 * Node.js
 * Express.js
-* PostgreSQL
+* PostgreSQL(superbase)
 * JWT Authentication
 * Bcrypt (Password Hashing)
 
@@ -362,7 +362,7 @@ Example:
         {
           "name": "sendmoney",
           "request": {
-            "method": "GET",
+            "method": "POST",
             "header": []
           },
           "response": []
